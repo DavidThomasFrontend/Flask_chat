@@ -7,4 +7,4 @@ app = Flask(__name__)
 def index():
     return "<h1>Hello there!</h1>"
 
-app.run(host=os.getenv('IP'), port=int(os.getenv('PORT')), debu=True)
+app.run(host=os.getenv('IP'), port=int(os.getenv('PORT')), debug=True)
