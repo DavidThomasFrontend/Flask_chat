@@ -36,7 +36,7 @@ def index():
         add_message(username, message)
         return redirect(url_for("user", username=session["username"]))  #this is needed because everytime page reloads it will send same message again#
 
-        return render_template("chat.html", username = username, chat_messages = messages)
+    return render_template("chat.html", username = username, chat_messages = messages)
 
     
 app.run(host=os.getenv("IP", "0.0.0.0"), port=int(os.getenv("PORT", "5000")), debug=False)
